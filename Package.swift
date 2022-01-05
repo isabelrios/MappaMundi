@@ -12,6 +12,9 @@ let package = Package(
     products: [
         .library(name: "MappaMundi", targets: ["MappaMundi"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/Dev1an/A-Star.git", .branch("master")),
+    ],
     targets: [
         .target(name: "MappaMundi", path: "Sources"),
     ],
